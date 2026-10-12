@@ -24,3 +24,8 @@ node scripts/vorschau.mjs      # dann http://localhost:4010
 Noch nicht eingerichtet. Geplant wie bei tiffcore.ch: Kopie unter `/opt/tiffcar-website` auf dem vServer,
 der Caddy der Handwerk-App liefert `public/` für `tiffcar.ch` aus, das Auto-Update holt Änderungen alle 5 Minuten.
 Vorher müssen im DNS von hosttech `tiffcar.ch` und `www.tiffcar.ch` per A-Eintrag auf `185.178.195.35` zeigen.
+
+## Preise ändern
+
+Die Preise stehen in `public/preise.json`. Auf GitHub die Datei öffnen, auf den Stift klicken, die Zahl ändern,
+«Commit changes» drücken. Nach spätestens 5 Minuten steht der neue Preis auf tiffcar.ch.

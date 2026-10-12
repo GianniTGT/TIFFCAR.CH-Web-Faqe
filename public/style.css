@@ -469,3 +469,4 @@ footer { position: relative; }
   .auf { opacity: 1; transform: none; transition: none; }
   .suche, .suche-fenster, .welle { animation: none; }
 }
+.preis b { font-weight: inherit; }
