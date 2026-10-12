@@ -347,3 +347,14 @@ footer .copy.copy-solo { grid-column: auto; border: 0; margin: 0; padding: 0; }
 .web-seite { background: #f6f9f7; padding: 12px; display: grid; gap: 10px; height: 100%; align-content: start; font-size: 9px; }
 .zeig-bild { width: 100%; height: auto; border-radius: 14px; display: block; }
 .rahmen-bild.breit { max-width: none; }
+
+/* Kopf mit dem Auto-Foto der Anmeldeseite (gespiegelt, Auto rechts) */
+.held.mit-foto { background: linear-gradient(90deg, rgba(4, 18, 11, .96) 0%, rgba(4, 18, 11, .82) 38%, rgba(4, 18, 11, .15) 70%, rgba(4, 18, 11, .35) 100%), url("/bilder/auto-nacht.webp") center / cover no-repeat, #04120b; }
+.foto-feld { position: relative; min-height: 420px; }
+.dunkel-rahmen { background: linear-gradient(160deg, #26302b, #111614); border-color: #2a332e; }
+.hell-klein { max-width: 760px; margin-top: -60px; margin-left: auto; margin-right: 4%; position: relative; transform: rotateX(6deg) translateZ(40px); }
+@media (max-width: 1020px) {
+  .held.mit-foto { background: linear-gradient(180deg, rgba(4, 18, 11, .2) 0%, rgba(4, 18, 11, .7) 45%, rgba(4, 18, 11, .96) 70%), url("/bilder/auto-nacht.webp") 75% 0 / auto 60% no-repeat, #04120b; }
+  .foto-feld { min-height: 240px; order: -1; }
+  .hell-klein { margin: 16px auto 0; transform: none; }
+}

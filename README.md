@@ -4,7 +4,7 @@ Die Webseite für **https://tiffcar.ch**: Werbeseite mit Login-Knopf, Impressum 
 Ein Produkt der Tiff Software Solutions, Bern. Die App selbst (TiffCar, `app.tiffcar.ch`) liegt im Repo `GianniTGT/Tiff-Autohaendler-DMS`.
 
 Aufgebaut wie `GianniTGT/tiffcore-website`: feste Dateien, ohne Baukasten, ohne Cookies, ohne Dateien von fremden Anbietern.
-Einziges Skript ist `public/punkte.js` (das Logo aus leuchtenden Punkten), und es kommt von der Seite selbst.
+Kein einziges Skript. Das Auto-Foto im Kopf ist das Hintergrundbild der TiffCar-Anmeldeseite (gespiegelt).
 
 ## Ansehen
 

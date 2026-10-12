@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
 <link rel="icon" href="/tiff-logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css?v=2">
+<link rel="stylesheet" href="/style.css?v=3">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -34,7 +34,7 @@
 
 <main id="inhalt">
 
-<div class="held">
+<div class="held mit-foto">
   <div class="wrap">
     <div>
       <span class="pille"><i>NEU</i> Software für Occasionshändler</span>
@@ -50,11 +50,9 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Ohne Installation</li>
       </ul>
     </div>
-    <div class="punkte-feld" role="img" aria-label="Das Tiff-Logo aus leuchtenden Punkten, die sich im Raum drehen">
-      <canvas id="punkte"></canvas>
-      <noscript><img src="/tiff-logo.svg" alt=""></noscript>
-      <div class="chip c2" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></i>Fahrzeug verkauft</div>
-      <div class="chip c1" aria-hidden="true"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></i>Inserat aktiv</div>
+    <div class="foto-feld" aria-hidden="true">
+      <div class="chip c2"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></i>Fahrzeug verkauft</div>
+      <div class="chip c1"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></i>Inserat aktiv</div>
     </div>
   </div>
 </div>
@@ -63,10 +61,13 @@
   <div class="wrap">
     <div class="sec-kopf">
       <h2>Ihr Autohaus auf einen Blick</h2>
-      <p>Gebundenes Kapital, erwarteter Gewinn, überfällige Rechnungen, MFK-Fristen und lange Standzeiten: das Dashboard von TiffCar.</p>
+      <p>Gebundenes Kapital, erwarteter Gewinn, überfällige Rechnungen, MFK-Fristen und lange Standzeiten: das Dashboard von TiffCar, hell oder dunkel.</p>
     </div>
     <div class="zeig-buehne">
-      <figure class="zeig-rahmen">
+      <figure class="zeig-rahmen dunkel-rahmen">
+        <img class="zeig-bild" src="/bilder/dashboard-dunkel.webp" width="2000" height="570" alt="Das Dashboard von TiffCar in der dunklen Darstellung, Daten einer Beispiel-Garage">
+      </figure>
+      <figure class="zeig-rahmen hell-klein">
         <img class="zeig-bild" src="/bilder/dashboard.webp" width="2000" height="570" alt="Das Dashboard von TiffCar einer Beispiel-Garage: Kapital, erwarteter Gewinn, Fahrzeuge auf Lager, Liste «Zu erledigen» und Diagramm «Wo das Geld steckt»">
       </figure>
     </div>
@@ -367,6 +368,5 @@
   </div>
 </footer>
 
-<script src="/punkte.js" defer></script>
 </body>
 </html>
