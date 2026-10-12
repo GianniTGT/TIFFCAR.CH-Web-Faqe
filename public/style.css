@@ -470,3 +470,11 @@ footer { position: relative; }
   .suche, .suche-fenster, .welle { animation: none; }
 }
 .preis b { font-weight: inherit; }
+
+/* TiffCar clean (12.10.): kein Leuchtlogo, keine Plaketten, keine Berge. Am Handy wie TiffCore: Bild als eigenes Feld oben. */
+.stuetze::after { display: none; }
+@media (max-width: 1020px) {
+  .held.mit-foto { background: radial-gradient(55% 65% at 74% 30%, rgba(30, 130, 80, .3), transparent 72%), #04120b; }
+  .held.mit-foto .foto-feld { order: -1; width: 100%; max-width: 540px; margin: 8px auto 0; aspect-ratio: 4 / 3; min-height: 0; border-radius: 28px; background: url("/bilder/auto-nacht.webp") 78% 60% / cover no-repeat; box-shadow: 0 30px 60px -24px rgba(0, 0, 0, .8); }
+}
+.preis-hinweis b { font-weight: 700; }
