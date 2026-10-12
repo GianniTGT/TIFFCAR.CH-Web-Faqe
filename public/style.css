@@ -478,3 +478,25 @@ footer { position: relative; }
   .held.mit-foto .foto-feld { order: -1; width: 100%; max-width: 540px; margin: 8px auto 0; aspect-ratio: 4 / 3; min-height: 0; border-radius: 28px; background: url("/bilder/auto-nacht.webp") 78% 60% / cover no-repeat; box-shadow: 0 30px 60px -24px rgba(0, 0, 0, .8); }
 }
 .preis-hinweis b { font-weight: 700; }
+
+/* TiffCar am Handy: gebaut wie das echte Handy-Bild von TiffCore (gleiche Grösse, App-Leiste, Karten) */
+.app-handy { width: 270px; aspect-ratio: 585 / 1266; margin: 0 auto; background: #e8ecea; border: 9px solid #17251f; border-radius: 40px; overflow: hidden; box-shadow: 0 30px 60px -18px rgba(16, 32, 26, .55); position: relative; font-size: 11.5px; color: #1c1c1e; display: flex; flex-direction: column; }
+.app-handy::before { content: ""; position: absolute; left: 50%; top: 0; width: 42%; height: 16px; margin-left: -21%; background: #17251f; border-radius: 0 0 12px 12px; z-index: 2; }
+.ah-leiste { background: #0f4a2b; color: #fff; padding: 26px 14px 10px; display: flex; justify-content: space-between; align-items: center; }
+.ah-leiste > svg { width: 20px; height: 20px; }
+.ah-rechts { display: flex; align-items: center; gap: 10px; }
+.ah-rechts svg { width: 16px; height: 16px; }
+.ah-rechts b { background: #fff; color: #0f4a2b; border-radius: 10px; padding: 6px 10px; font-size: 11px; }
+.ah-inhalt { padding: 14px 14px 0; display: flex; flex-direction: column; gap: 7px; }
+.ah-karte { background: #fff; border-radius: 16px; padding: 12px 13px; box-shadow: 0 2px 8px rgba(0, 0, 0, .06); }
+.ah-karte small { display: flex; justify-content: space-between; color: #66756c; font-size: 10px; }
+.ah-karte small i { font-style: normal; }
+.ah-karte h3 { font-size: 17px; margin: 6px 0 4px; letter-spacing: -0.02em; }
+.ah-karte p { margin: 0; color: #36463d; font-size: 10.5px; }
+.ah-knoepfe { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 10px; }
+.ah-knoepfe span { border: 1.5px solid #1f7a4d; color: #0f4a2b; border-radius: 10px; text-align: center; padding: 5px; font-weight: 700; }
+.ah-inhalt h4 { margin: 6px 0 0; font-size: 11.5px; }
+.ah-zeile { display: flex; justify-content: space-between; background: #fff; border-radius: 9px; padding: 6px 10px; font-variant-numeric: tabular-nums; }
+.ah-zeile.gelb { background: #f4e7c8; color: #7a5a1c; font-weight: 700; }
+.ah-gewinn { display: flex; justify-content: space-between; background: #1f7a4d; color: #fff; border-radius: 10px; padding: 8px 10px; font-weight: 800; }
+.ah-knopf { background: #0f4a2b; color: #fff; border-radius: 12px; text-align: center; padding: 9px; font-weight: 700; margin-top: 2px; }
