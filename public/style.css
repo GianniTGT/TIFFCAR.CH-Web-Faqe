@@ -345,3 +345,5 @@ footer .copy.copy-solo { grid-column: auto; border: 0; margin: 0; padding: 0; }
 .web-kopf { display: flex; justify-content: space-between; align-items: center; font-weight: 800; color: var(--tinte); font-size: 11px; }
 .web-kopf i { font-style: normal; font-weight: 600; color: var(--leise); font-size: 9px; border: 1px solid var(--linie); border-radius: 999px; padding: 2px 8px; }
 .web-seite { background: #f6f9f7; padding: 12px; display: grid; gap: 10px; height: 100%; align-content: start; font-size: 9px; }
+.zeig-bild { width: 100%; height: auto; border-radius: 14px; display: block; }
+.rahmen-bild.breit { max-width: none; }
