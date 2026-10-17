@@ -419,6 +419,7 @@ footer { position: relative; }
 .preis-karte .preis { margin: 14px 0 6px; font-size: 56px; font-weight: 800; color: var(--tinte); letter-spacing: -0.04em; line-height: 1; }
 .preis-karte .preis span { font-size: 18px; font-weight: 700; color: var(--leise); letter-spacing: 0; margin-right: 4px; }
 .preis-karte .preis small { display: block; margin-top: 8px; font-size: 14px; font-weight: 600; color: var(--leise); letter-spacing: 0; }
+.preis-karte .preis.anfrage { font-size: 34px; } /* «Auf Anfrage» statt Zahl (website.html) */
 .preis-karte .btn { margin-top: auto; align-self: flex-start; }
 .preis-karte .punkte { margin: 18px 0 26px; }
 .preis-karte.haupt { background: linear-gradient(160deg, #0e4a2b, #062616); color: rgba(255, 255, 255, .86); border-color: transparent; }
