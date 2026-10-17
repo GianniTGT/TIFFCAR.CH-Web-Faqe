@@ -515,3 +515,7 @@ footer { position: relative; }
   .preise-raster.drei .preis-karte .punkte svg { width: 12px; height: 12px; margin-top: 1px; }
   .preise-raster.drei .preis-karte .btn { align-self: stretch; padding: 9px 6px; font-size: 11.5px; line-height: 1.2; white-space: normal; text-align: center; justify-content: center; }
 }
+
+/* Fuss: Vertrauenszeichen «Server in der Schweiz» (wahr: hosttech, Zürich), gleich wie auf tiffcore.ch */
+footer .copy .schweiz { display: inline-flex; align-items: center; gap: 6px; margin-right: 14px; color: rgba(255, 255, 255, .72); }
+footer .copy .schweiz svg { flex: none; }
