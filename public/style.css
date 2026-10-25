@@ -428,6 +428,14 @@ footer { position: relative; }
 .preis-karte.haupt .punkte svg { color: #5fe3a0; }
 .preis-karte.haupt .btn-primary { background: var(--gold); color: var(--tinte); }
 .preis-hinweis { text-align: center; margin-top: 22px; color: var(--leise); font-size: 15px; }
+/* Einführungspreis: Normalpreis durchgestrichen über dem Preis, Hinweis zur Frist, «Am beliebtesten» auf dem mittleren Paket */
+.preis-alt { margin-top: 10px; font-size: 15px; font-weight: 600; color: var(--leise); }
+.preis-alt s { text-decoration-thickness: 2px; }
+.preis-karte.haupt .preis-alt { color: rgba(255, 255, 255, .7); }
+.preis-karte { position: relative; }
+.beliebt { position: absolute; top: -13px; right: 24px; background: var(--gold); color: var(--tinte); font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; }
+.preis-aktion { text-align: center; margin-top: 26px; font-size: 17px; font-weight: 700; color: var(--gruen, #0e4a2b); }
+[hidden] { display: none !important; }
 
 /* Support, deutlich hervorgehoben */
 .support { padding: 40px 0; }
@@ -508,6 +516,9 @@ footer { position: relative; }
   .preise-raster.drei { gap: 8px; }
   .preise-raster.drei .preis-karte { padding: 16px 10px; border-radius: 18px; }
   .preise-raster.drei .preis-karte h3 { font-size: 15px; }
+  .preise-raster.drei .beliebt { top: -9px; right: 50%; transform: translateX(50%); font-size: 10px; padding: 2px 7px; white-space: nowrap; }
+  .preise-raster.drei .preis-alt { margin-top: 6px; font-size: 11px; }
+  .preis-aktion { font-size: 15px; }
   .preise-raster.drei .preis-karte .preis { margin: 8px 0 4px; font-size: 27px; }
   .preise-raster.drei .preis-karte .preis span { display: block; font-size: 11px; margin: 0 0 2px; }
   .preise-raster.drei .preis-karte .preis small { font-size: 10.5px; margin-top: 4px; line-height: 1.3; }

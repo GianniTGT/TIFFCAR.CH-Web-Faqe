@@ -11,7 +11,7 @@ const PORT = Number(process.env.PORT) || 4010;
 const KOEPFE = {
   "X-Content-Type-Options": "nosniff",
   "Referrer-Policy": "strict-origin-when-cross-origin",
-  "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; style-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+  "Content-Security-Policy": "default-src 'self'; connect-src 'self' https://app.tiffcar.ch http://localhost:3010; img-src 'self' data:; style-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
 };
 const TYPEN = { ".js": "text/javascript; charset=utf-8", ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".svg": "image/svg+xml", ".txt": "text/plain; charset=utf-8", ".png": "image/png", ".webp": "image/webp" };
 
