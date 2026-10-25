@@ -27,5 +27,7 @@ Vorher müssen im DNS von hosttech `tiffcar.ch` und `www.tiffcar.ch` per A-Eintr
 
 ## Preise ändern
 
-Die Preise stehen in `public/preise.json`. Auf GitHub die Datei öffnen, auf den Stift klicken, die Zahl ändern,
-«Commit changes» drücken. Nach spätestens 5 Minuten steht der neue Preis auf tiffcar.ch.
+Die Preise kommen seit dem 25.10.2026 aus der App: `https://app.tiffcar.ch/api/public/prices`, im App-Repo
+`apps/cardealer-ch/server/src/services/plans.js`. So zeigen App und Webseite nie verschiedene Preise. Preise ändern heisst also:
+in der App ändern und dort ausliefern; die Webseite übernimmt sie von selbst. Die Zahlen im HTML sind nur der Rückfall, falls die
+App nicht antwortet. Nur das «Eigene Design» (website.html, ab CHF 490) steht direkt im HTML.
