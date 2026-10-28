@@ -27,7 +27,11 @@ Vorher müssen im DNS von hosttech `tiffcar.ch` und `www.tiffcar.ch` per A-Eintr
 
 ## Preise ändern
 
-Die Preise kommen seit dem 25.10.2026 aus der App: `https://app.tiffcar.ch/api/public/prices`, im App-Repo
-`apps/cardealer-ch/server/src/services/plans.js`. So zeigen App und Webseite nie verschiedene Preise. Preise ändern heisst also:
-in der App ändern und dort ausliefern; die Webseite übernimmt sie von selbst. Die Zahlen im HTML sind nur der Rückfall, falls die
-App nicht antwortet. Nur das «Eigene Design» (website.html, ab CHF 490) steht direkt im HTML.
+Preise werden **nur im Betreiber-Bereich der App** geändert: https://app.tiffcar.ch/betreiber → «Pakete»
+(Preis, Normalpreis, «Aktion bis», Fahrzeuge, «Am beliebtesten», dazu Jahresabo-Gratismonate, Werkstatt, Einrichtung, Schulung).
+Speichern genügt, es braucht kein neues Ausliefern. Die App rechnet sofort damit; die Webseite holt die Preise von
+`https://app.tiffcar.ch/api/public/prices` und zeigt sie spätestens nach 5 Minuten. Bestehende Kunden behalten ihren
+vereinbarten Preis.
+
+Die Zahlen im HTML hier sind nur der Rückfall, falls die App nicht antwortet. Wer sie nachführen will, nimmt dieselben Zahlen wie
+im Betreiber-Bereich. Nur das «Eigene Design» (website.html, ab CHF 490) steht direkt im HTML.
